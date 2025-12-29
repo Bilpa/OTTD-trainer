@@ -27,11 +27,11 @@ fun CellView(cell: Cell, size: Dp, onClick: () -> Unit) {
 
     }
 
-        Box(Modifier
-            .size(size)
-            .border(1.dp, Color.Black)
-            .background(color)
-            .clickable { onClick() }
-        )
+    Box(Modifier
+        .size(size)
+        .border(1.dp, Color.Gray)
+        .background(color)
+        .clickable { onClick() }
+    )
 
 }

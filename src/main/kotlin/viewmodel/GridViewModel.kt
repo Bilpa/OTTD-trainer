@@ -19,8 +19,11 @@ class GridViewModel(
         grid.clear()
         for (y in 0 until height){
             for(x in 0 until width){
-                grid.add(Cell(x,y))
-
+                when(y){
+                    0 -> grid.add(Cell(x,y, cellType = CellType.TD_AWAY))
+                    height-1 -> grid.add(Cell(x,y, cellType = CellType.TD_HOME))
+                    else ->  grid.add(Cell(x,y))
+                }
             }
         }
     }
