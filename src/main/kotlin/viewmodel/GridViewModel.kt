@@ -9,6 +9,9 @@ class GridViewModel(
     val height: Int = 26
 ) {
 
+    val thickHorizontalLines = setOf(0,12,24)
+    val thickVerticalLines = setOf(3,10)
+
     val grid = mutableStateListOf<Cell>()
 
     init {
