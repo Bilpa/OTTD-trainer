@@ -1,0 +1,51 @@
+# =========================
+# Gradle
+# =========================
+.gradle/
+build/
+**/build/
+
+# =========================
+# IntelliJ IDEA / Android Studio
+# =========================
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# =========================
+# Kotlin / JVM
+# =========================
+*.class
+*.log
+
+# =========================
+# Compose Desktop
+# =========================
+compose-desktop/
+run/
+
+# =========================
+# OS-specifikt
+# =========================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Linux
+*~
+
+# =========================
+# Test & coverage
+# =========================
+coverage/
+*.exec
+
+# =========================
+# Local config
+# =========================
+local.properties
