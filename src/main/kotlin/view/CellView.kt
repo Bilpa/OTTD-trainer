@@ -16,7 +16,6 @@ import model.CellType
 
 
 @Composable
-@Preview
 fun CellView(cell: Cell, size: Dp, onClick: () -> Unit) {
 
     val color = when (cell.cellType) {

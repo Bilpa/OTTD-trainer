@@ -51,6 +51,19 @@ fun main() = application {
         ),
         resizable = true
     ) {
-       GridView(viewModel)
+       AppContent(viewModel)
     }
 }
+@Composable
+fun AppContent(viewModel: GridViewModel){
+    GridView(viewModel)
+}
+
+@Preview
+@Composable
+fun GridPreview(){
+    val previewVM = GridViewModel()
+
+    AppContent(previewVM)
+}
+
